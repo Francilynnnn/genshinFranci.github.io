@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Review on Genshin - Home</title>
+		<link href="Design.css" rel="stylesheet" type="text/css"/>	
+
+	</head>
+	<body>
+		<div class="menu">
+			<header>
+				<nav id="TOP">
+				  <img src = "images/GenshinLogo.png" alt = "Genshin Impact Logo">
+				  <a class="Link" href = "SignUp.htm" title = "Sign Up">Sign Up</a>
+				  <a class="Link" href = "Kazuha.htm" title = "Kazuha">Kazuha</a>
+				  <a class="Link" href = "Xingqiu.htm" title = "Xingqiu">Xingqiu</a>
+				  <a class="Link" href = "Diluc.htm" title = "Diluc">Diluc</a>
+				  <a class="Link" href = "Home.htm" title = "Home">Home</a>
+				</nav>
+			</header>
+		</div>
+		
+		<div class="slideshow">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 5</div>
+				  <img src="images/Main-1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 5</div>
+				  <img src="images/Main-2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 5</div>
+				  <img src="images/Main-3.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">4 / 5</div>
+				  <img src="images/Main-4.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">5 / 5</div>
+				  <img src="images/Main-5.jpg" style="width:100%">
+				</div>
+
+				</div>
+				<br>
+				<div style="text-align:center">
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span>
+				  <span class="dot"></span> 
+				  <span class="dot"></span>  
+				</div>
+
+				<script>
+				let slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+				    slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+				    dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 6000); // Change image every 2 seconds
+				}
+				</script>
+
+			</div>
+		</div>
+		<p class="view">SELECT ONE TO VIEW</p>
+		<div class="CharactersCover">
+			<div class="Diluc">
+				<a href="Diluc.htm">
+				<img src = "images/Diluc-Edit-1.png" class="Characters" alt = "Diluc">
+				<div class="Layer">
+					<img  src = "images/Diluc-Edit.png" class="Shadow">
+					<div class="Info">
+						<img src="images/D-Vision.png" class="Vision">
+						<h2>Diluc Ragnvindr</h2>
+						<p class="Title">The Dark Side of Dawn</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="Xingqiu">
+				<a href="Xingqiu.htm">
+				<img  src = "images/Xingqiu-Edit-1.png" class="Characters" alt = "Xingqiu">
+				<div class="Layer">
+					<img  src = "images/Xingqiu-Edit.png" class="Shadow">
+					<div class="Info">
+						<img src="images/X-Vision.png" class="Vision">
+						<h2>Xingqiu</h2>
+						<p class="Title">Juvenile Galant</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="Kazuha">
+				<a href="Kazuha.htm">
+				<img src = "images/Kazuha-Edit-1.png" class="Characters" alt = "Kazuha">
+				<div class="Layer">
+					<img  src = "images/Kazuha-Edit.png" class="Shadow">
+					<div class="Info">
+						<img src="images/K-Vision.png" class="Vision">
+						<h2>Kaedehara Kazuha</h2>
+						<p class="Title">Scarlet Leaves Pursue Wild Waves</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Navigation-Head">
+			<a class="Navigation" href="#TOP">BACK TO TOP</a>
+		</div>
+	</body>
+
+	<footer class="Footer">
+		<h4>Made by Francilyn Bernadette P. Estanislao</h4>
+		<h5>WD-201</h5>
+		
+	</footer>
+</html>

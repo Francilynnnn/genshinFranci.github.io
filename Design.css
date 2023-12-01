@@ -1,0 +1,285 @@
+* { margin: 0; padding: 0; }
+header {background-image: url(images/Header.jpg); 
+        background-repeat: no-repeat; 
+        background-size: cover;}
+
+img {width: 160px; height: auto;}
+
+div header {overflow: hidden; 
+            position: relative;
+	          padding-right: 30px; 
+            padding-left: 80px;}
+
+.Link {float: right; color: white; font-size: 20px; 
+        font-family: Arial, sans-serif; 
+        font-weight: bold; padding-right: 25px;  
+        padding-left: 25px; padding-top: 15px; 
+        text-decoration: none; 
+        -moz-transition: all 0.2s ease-in; 
+        -o-transition: all 0.2s ease-in; 
+        -webkit-transition: all 0.2s ease-in; 
+        transition: all 0.2s ease-in;}
+
+.Link:hover {color: ghostwhite; font-size: 25px; 
+            text-decoration: none; 
+            text-shadow:0px 0px 30px aquamarine; 
+            -moz-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in; 
+            -webkit-transition: all 0.2s ease-in; 
+            transition: all 0.2s ease-in;}
+
+* {box-sizing: border-box;}
+
+body {font-family: Verdana, sans-serif; 
+      background-image: url(images/Background-1.gif); 
+      background-size: cover; background-position: 30%; 
+      background-repeat: no-repeat; 
+      width: 1515px; height: auto;}
+
+.mySlides {display: none;}
+
+img {vertical-align: middle;}
+
+.slideshow {height: 700px;} 
+.slideshow-container {max-width: 1100px; 
+                      position: relative; 
+                      margin: auto;}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+
+.active {
+  background-color: #717171;}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+@font-face { font-family: GENSHIN; src: url(font/Genshin.ttf);}
+
+.view {text-align: center; font-family: GENSHIN; 
+       font-size: 25px;}
+
+.CharactersCover {height: 660px;}
+
+.Diluc {background-image: url(images/Diluc-BG.png); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        width: 235px; height: 390px;
+        display: inline-block;
+        margin-right: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 2px rgb(104, 104, 104);
+        margin-top: 50px; margin-left: 370px; }
+
+.Diluc:hover {text-shadow:0px 0px 30px black; 
+              -moz-transition: all 0.2s ease-in;
+              -o-transition: all 0.2s ease-in; 
+              -webkit-transition: all 0.2s ease-in; 
+              transition: all 0.2s ease-in; 
+              box-shadow: 0 0 15px 10px orange;}
+
+.Xingqiu {background-image: url(images/Xingqiu-BG.png); 
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          width: 235px; height: 390px; 
+          display: inline-block;
+          margin-right: 40px;
+          border-radius: 5px;
+          box-shadow: 0 0 5px 2px rgb(104, 104, 104);
+          margin-top: 50px; }
+
+.Xingqiu:hover {text-shadow: 0px 0px 30px black; 
+                -moz-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in; 
+                -webkit-transition: all 0.2s ease-in; 
+                transition: all 0.2s ease-in;
+                box-shadow: 0 0 15px 10px skyblue;}
+
+.Kazuha {background-image: url(images/Kazuha-BG.png); 
+         background-size: cover; 
+         background-repeat: no-repeat; 
+         width: 235px; height: 390px;
+         display: inline-block;
+         border-radius: 5px;
+         box-shadow: 0 0 5px 2px rgb(104, 104, 104);
+         margin-top: 50px; margin-right: 70px;}
+
+.Kazuha:hover {text-shadow:0px 0px 30px black; 
+              -moz-transition: all 0.2s ease-in;
+              -o-transition: all 0.2s ease-in; 
+              -webkit-transition: all 0.2s ease-in; 
+              transition: all 0.2s ease-in; 
+              box-shadow: 0 0 15px 10px mediumturquoise;}
+
+.Characters {width: 235px; height: 390px;}
+.Shadow {width: 235px; height: 390px;}
+
+.Layer {flex-basis: 30%; 
+  position: absolute; 
+        top: 838px;
+        max-height: 0px; 
+        overflow: hidden; 
+        transition: max-height 1s;}
+
+.Xingqiu:hover .Layer {max-height: 650px;}
+.Diluc:hover .Layer {max-height: 650px;}
+.Kazuha:hover .Layer {max-height: 650px;}
+
+.Vision {width: 70px; 
+         height: 70px; 
+         margin-top: 20px;}
+
+.Title {padding: 10px;}
+
+.Info {width: 235px; box-sizing: border-box;
+       text-align: center; 
+       border-radius: 3px; 
+       color: white; 
+       font-family: GENSHIN; }
+
+.Heads {width: 60px; height: 60px; position: relative;}
+
+.Character-Stand {width: 880px; height: auto; float: right;}
+
+.Info-D {background-image: url(images/try.png); 
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 1515px; height: 540px;
+         color: white; }
+.NameDisplay {margin-top: 110px; 
+              margin-left: 160px; 
+              width: 150px; 
+              text-align: center; 
+              border-radius: 5px; 
+              display: inline-block; 
+              font-family: Arial, sans-serif; 
+              font-size: 40px; 
+              font-family: GENSHIN; 
+              padding-left: 15px;}
+
+.NameDisplay:hover {text-shadow: 0px 0px 30px white; transition: 0.5s; }
+.NameDisplay-K:hover {text-shadow: 0px 0px 30px white; transition: 0.5s; }
+
+.VoiceLine{color: moccasin; font-style: italic; 
+          margin-left: 100px; margin-top: 20px;
+          width: 480px; text-align: justify; 
+          font-family: GENSHIN; font-size: 12px; }
+
+.Voice {margin-left: 100px; margin-top: 20px;}
+
+.Description {background-color: black; opacity: 0.8; 
+              padding: 10px; text-align: justify; 
+              margin-left: 100px; width: 500px; 
+              display: inline-block; 
+              margin-top: 30px; }
+
+.VoiceLine:hover {text-shadow: 0px 0px 30px moccasin; transition: 0.5s;}
+.Description:hover {box-shadow: 0 0 5px 2px rgb(104, 104, 104);}
+
+.Info-D-1 {background-image: url(images/try-1.png); 
+           width: 1515px; height: 540px;}
+
+.Animation {margin: 50px 120px 50px 60px; width: 750px; 
+            height: auto; float: left; 
+            display: inline-block;}
+
+.Animation-D {margin: 50px 120px 50px 60px; width: 750px; 
+            height: auto; float: left; 
+            display: inline-block; padding-top: 40px;}
+
+.Article-1 {color: white; padding-top: 20px; 
+            padding-right: 50px; 
+            font-family: GENSHIN;}
+
+.Article-2 {color: white; padding-top: 20px; 
+            padding-right: 50px; 
+            font-family: GENSHIN;}
+
+.Info-X {background-image: url(images/try-2.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 1515px; height: 540px;
+         color: white; }
+
+.Info-X-1 {background-image: url(images/try-2-1.png); 
+          width: 1515px; height: 520px;}
+
+.Info-K-1 {background-image: url(images/try-3-1.png); 
+          width: 1515px; height: 520px;}
+
+.Info-K {background-image: url(images/try-3.png);
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 1515px; height: 540px;
+         color: white; }
+
+.Voice {margin-left: 100px; margin-top: 20px;}
+.Voice-K {margin-left: 100px; margin-top: 5px;}
+
+.NameDisplay-K {margin-top: 80px; margin-left: 160px; 
+                width: 150px; text-align: center; 
+                border-radius: 5px; 
+                display: inline-block; 
+                font-size: 40px; font-family: GENSHIN; 
+                padding-left: 15px;}
+
+footer {background-image: url(images/Footer.png); 
+        height: 100px;  color: white;
+        padding-top: 30px;
+        padding-right: 200px; 
+        text-align: right;}
+
+.Footer-D {background-image: url(images/D-Footer.png); padding-right: 200px;}
+.Footer-D:hover {text-shadow: 0px 0px 30px white; }
+
+.Footer-X {background-image: url(images/X-Footer.png); padding-right: 200px;}
+.Footer-X:hover {text-shadow: 0px 0px 30px white; }
+
+.Footer-K {background-image: url(images/K-Footer.png); padding-right: 240px;}
+.Footer-K:hover {text-shadow: 0px 0px 30px white; }
+
+.Heading {padding-bottom: 20px; font-family: GENSHIN;}
+.Heading:hover {text-shadow: 0px 0px 30px white; }
+
+.Table {width: 500px; background-color: Gainsboro; 
+        opacity: 0.8; color: black; border-collapse: collapse;}
+
+th, td {border: 1px solid; padding: 5px;}
+
+.Pic {width: 40px; height: auto;}
+
+.NameCard {text-align: center;}
+
+.Row {padding: 5px 5px 2px 5px; font-size: 16px;}
+
+.Footer:hover {text-shadow: 0px 0px 30px white; }
+
+.Navigation-Head {width: 1515px; height: 50px; }
+.Navigation {padding-left: 700px; color: white; text-decoration: none; 
+             font-family: GENSHIN; font-size: 20px;}
+
+.Navigation:hover {color: plum; transition: 0.8s;}
+.Review {font-size: 15px; text-align: justify;}
