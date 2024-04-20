@@ -5,6 +5,8 @@ header {background-image: url(images/Header.jpg);
 
 img {width: 160px; height: auto;}
 
+.view{margin-top: 250px;}
+
 div header {overflow: hidden; 
             position: relative;
 	          padding-right: 30px; 
@@ -40,8 +42,8 @@ body {font-family: Verdana, sans-serif;
 
 img {vertical-align: middle;}
 
-.slideshow {height: 700px;} 
-.slideshow-container {max-width: 1100px; 
+.slideshow {height: 700px; width: auto;} 
+.slideshow-container {max-width: auto; 
                       position: relative; 
                       margin: auto;}
 
@@ -135,7 +137,8 @@ img {vertical-align: middle;}
               box-shadow: 0 0 15px 10px mediumturquoise;}
 
 .Characters {width: 235px; height: 390px;}
-.Shadow {width: 235px; height: 390px;}
+.Shadow {width: 235px; height: 390px; margin-top: 250px;}
+
 
 .Layer {flex-basis: 30%; 
   position: absolute; 
